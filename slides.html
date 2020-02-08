@@ -48,7 +48,14 @@
     <script src="./node_modules/reveal.js/js/reveal.js"></script>
 
     <script>
-      Reveal.initialize();
+      Reveal.initialize({
+        dependencies: [
+          {
+            src: "./node_modules/revealjs-animated/dist/revealjs-animated.js",
+            async: true
+          }
+        ]
+      });
     </script>
   </body>
 </html>
