@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+
+html {
+  background: #111;
+}
+body {
+  background: transparent;
+}
+.theme-body-color-block {
+  background: #fff;
+}
+.theme-link-color-block {
+  background: #8dd792;
+}
+.themed,
+.reveal {
+  color: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 30px;
+}
+.themed a,
+.reveal a {
+  color: #8dd792;
+}
+.themed a:hover,
+.reveal a:hover {
+  color: #c6ebc8;
+}
+.reveal .controls {
+  color: #8dd792;
+}
+.reveal.has-dark-background .controls {
+  color: #fff;
+}
+.reveal.has-light-background .controls {
+  color: #000;
+}
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+  color: #8dd792;
+}
+.reveal .progress span {
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+.reveal .slide-number a {
+  color: currentColor;
+}
+.reveal .slide-number {
+  color: #ddd;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.themed section,
+.reveal section {
+  line-height: 1.3;
+}
+.themed h1,
+.themed h2,
+.themed h3,
+.themed h4,
+.themed h5,
+.themed h6,
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: "Quicksand", Helvetica, sans-serif;
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-weight: normal;
+}
+
+/* Splash screen */
+
+#splash h1 {
+  font-size: 65pt;
+  text-align: left;
+  margin-top: 25px;
+}
+
+#splash .avatar-splash {
+  text-align: right;
+}
+
+#splash .avatar {
+  width: 200px;
+  border-radius: 30%;
+}
+
+#splash .vuelogo {
+  position: absolute;
+  width: 100px;
+  right: -50px;
+  bottom: 0px;
+}

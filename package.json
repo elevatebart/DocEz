@@ -1,0 +1,11 @@
+{
+  "name": "docez",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "reveal.js": "^3.9.2",
+    "revealjs-animated": "^1.2.2"
+  }
+}
