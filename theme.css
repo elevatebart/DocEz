@@ -68,9 +68,19 @@ body {
 .reveal h5,
 .reveal h6 {
   font-family: "Quicksand", Helvetica, sans-serif;
-  text-transform: uppercase;
   line-height: 1.3;
   font-weight: normal;
+  text-transform: none;
+}
+
+.themed h1,
+.reveal h1 {
+  text-transform: uppercase;
+}
+
+.reveal section img {
+  border: none;
+  background: transparent;
 }
 
 /* Splash screen */
@@ -83,16 +93,104 @@ body {
 
 #splash .avatar-splash {
   text-align: right;
-}
-
-#splash .avatar {
-  width: 200px;
-  border-radius: 30%;
-}
-
-#splash .vuelogo {
+  opacity: 1;
+  visibility: visible;
   position: absolute;
-  width: 100px;
-  right: -50px;
-  bottom: 0px;
+  right: 0;
+  transition-duration: 500ms;
+}
+
+#splash .fragment.avatar-splash.visible {
+  transform: translate3d(-15vw, -25vh, 0) scale3d(1.5, 1.5, 1);
+}
+
+#splash .presentation {
+  height: 20vh;
+}
+
+#splash .presentation p {
+  position: absolute;
+}
+
+#splash .presentation img {
+  width: 60px;
+  vertical-align: middle;
+  margin: 20px;
+}
+
+#splash .contact {
+  position: absolute;
+  top: 45vh;
+  right: 50vh;
+  text-align: right;
+  font-size: 0.8em;
+}
+
+/* characters */
+
+#characters > div {
+  height: 27vh;
+}
+
+#characters > div img {
+  margin: 0 25px;
+}
+
+.dominic {
+  text-align: right;
+}
+
+.dominic img {
+  float: right;
+}
+
+.sarah {
+  text-align: left;
+}
+
+.sarah img {
+  float: left;
+}
+
+.patrick {
+  text-align: right;
+}
+
+.patrick img {
+  float: right;
+}
+
+.character-bio {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#characters .fragment.letter {
+  opacity: 1;
+  visibility: visible;
+}
+
+#characters .fragment.letter.visible {
+  font-size: 1.5em;
+  color: #8dd792;
+}
+
+/* blurrg */
+
+#blurrg .sarah-blurrg {
+  position: absolute;
+  margin: 70px -100px;
+}
+
+#blurrg .either {
+  width: 0;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+#blurrg .either.visible {
+  width: 92px;
 }
