@@ -1,6 +1,29 @@
-# DocEz
-Slides and demo for Component Documentation Made Easy (VueConf.us 2020)
+# docez
 
-Character pictures courtesy of https://lukaszadam.com/illustrations
+## Project setup
+```
+yarn install
+```
 
-Use, clone and comment at will, don't forget to give credit.
+### Compiles and hot-reloads for development
+```
+yarn run serve
+```
+
+### Compiles and minifies for production
+```
+yarn run build
+```
+
+### Run your tests
+```
+yarn run test
+```
+
+### Lints and fixes files
+```
+yarn run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
