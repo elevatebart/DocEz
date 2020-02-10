@@ -129,7 +129,7 @@ body {
 /* characters */
 
 #characters > div {
-  height: 27vh;
+  height: 22vh;
 }
 
 #characters > div img {
@@ -193,4 +193,20 @@ body {
 
 #blurrg .either.visible {
   width: 92px;
+}
+
+/* pro-contra */
+.pro-contra {
+  display: flex;
+}
+
+.pro-contra div {
+  border: 1px solid #ccc;
+  flex: 1;
+  margin: 0 20px;
+}
+
+.reveal section .pro-contra img {
+  display: block;
+  margin: 50px auto;
 }
