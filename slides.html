@@ -291,17 +291,17 @@
                 style="width:75px;vertical-align: middle;"
               />
             </h2>
-            <pre><code class="language-jsx">
-import MyButton from "./MyButton.vue";
-import { action } from "@storybook/addon-actions";
+            <pre><code data-trim data-noescape>
+              import MyButton from "./MyButton.vue";
+              import { action } from "@storybook/addon-actions";
 
-export default {
-  component: MyButton,
-  title: "Button"
-};
+              export default {
+                component: MyButton,
+                title: "Button"
+              };
 
-export const withJSX = () => 
-  &lt;MyButton onClick={() => action("clicked")}&gt;Hello Button&lt;/MyButton&gt;
+              export const withJSX = () => 
+                &lt;MyButton onClick={action(clicked)}&gt;Hello Button&lt;/MyButton&gt;
             </code></pre>
           </section>
           <section id="sb-procontra">
@@ -376,7 +376,7 @@ export const withJSX = () =>
           </section>
           <section id="vsg-code">
             MyButton.vue
-            <pre><code class="hljs html" data-trim data-noescape>
+            <pre><code data-trim data-noescape>
               &lt;template&gt;
                 &lt;button :style="`background-color:${color}`" &gt;
                   &lt;slot /&gt;
