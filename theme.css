@@ -239,5 +239,14 @@ pre[class*="language-"] {
 }
 
 #vsg-code code {
-  height: 80vh;
+  max-height: 86vh;
+}
+
+#vsg-code .fragment {
+  height: 0;
+  display: block;
+}
+
+#vsg-code .fragment.visible {
+  height: auto;
 }
