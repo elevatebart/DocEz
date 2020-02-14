@@ -11,10 +11,7 @@
       rel="stylesheet"
       href="./node_modules/reveal.js/css/theme/black.css"
     />
-    <link
-      rel="stylesheet"
-      href="./node_modules/reveal.js/lib/css/monokai.css"
-    />
+    <link rel="stylesheet" href="./ir-black.css" />
     <link rel="stylesheet" href="./theme.css" />
   </head>
   <body>
@@ -60,7 +57,7 @@
             </div>
             <div class="fragment fade-in presentation" data-fragment-index="1">
               <p style="top:50px;left:0;">
-                <img src="img/logo20.png" />
+                <img src="img/styleguidist.png" />
                 Vue-Styleguidist
               </p>
               <p style="top:50px;right:0;">
@@ -294,20 +291,17 @@
                 style="width:75px;vertical-align: middle;"
               />
             </h2>
-            <pre class="hljs" class="javascript"><code data-trim data-noescape>
-              import MyButton from "./MyButton.vue";
-              import { action } from "@storybook/addon-actions";
+            <pre><code class="language-jsx">
+import MyButton from "./MyButton.vue";
+import { action } from "@storybook/addon-actions";
 
-              export default {
-                component: MyButton,
-                title: "Button"
-              };
+export default {
+  component: MyButton,
+  title: "Button"
+};
 
-              export const withText = () => ({
-                components: { MyButton },
-                template: '<my-button @click="action">Hello Button</my-button>',
-                methods: { action: action("clicked") }
-              });
+export const withJSX = () => 
+  &lt;MyButton onClick={() => action("clicked")}&gt;Hello Button&lt;/MyButton&gt;
             </code></pre>
           </section>
           <section id="sb-procontra">
@@ -347,7 +341,66 @@
             </div>
           </section>
         </section>
-        <section id="sarah-phil"></section>
+        <section id="sarah-phil">
+          <span>🛠</span>
+          <img src="img/2x/sarah.png" style="width: 200px;margin: 50px;" />
+          <svg
+            class="fragment"
+            style="width: 150px;vertical-align:top;margin-top:200px;"
+            data-fragment-index="3"
+            viewBox="6.226 8.846 214.585 55.872"
+            width="214.585"
+            height="55.872"
+          >
+            <path
+              style="stroke: #8dd792;fill: none; stroke-width: 11px;"
+              d="M 6.226 47.266 C 45.087 -0.389 136.418 -8.34 187.911 49.889"
+            ></path>
+            <path
+              d="M 65.347 106.098 L 102.127 148.823 L 43.279 148.823 L 65.347 106.098 Z"
+              style="fill: #8dd792;"
+              transform="matrix(-0.996221, 0.086854, 0.086854, 0.996221, 251.000198, -92.413025)"
+            ></path>
+          </svg>
+          <img src="img/2x/phil.png" style="width: 170px;margin: 50px;" />
+          <span>🚀</span>
+        </section>
+        <section>
+          <section id="vsg">
+            <h2>Vue Styleguidist</h2>
+            <img
+              src="img/styleguidist.png"
+              style="width:400px;display: block;margin:20px auto;"
+            />
+            <code class="fragment">vue add styleguidist</code>
+          </section>
+          <section id="vsg-code">
+            MyButton.vue
+            <pre><code class="language-html" data-trim data-noescape>&lt;template&gt;
+  &lt;button :style="`background-color:${color}`" &gt;
+    &lt;slot /&gt;
+  &lt;/button&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  props: {<span class="fragment">
+    /**
+      * Background color given to the button
+      */</span>
+    color: {
+      type: String,
+      default: "blue"
+    }
+  }
+}
+&lt;/script&gt;
+<span class="fragment">
+&lt;docs&gt;
+# This is how the button is used
+&lt;/docs&gt;</span></code></pre>
+          </section>
+        </section>
       </div>
     </div>
 

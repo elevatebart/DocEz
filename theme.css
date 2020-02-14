@@ -84,6 +84,11 @@ body {
   box-shadow: none;
 }
 
+code[class*="language-"],
+pre[class*="language-"] {
+  font-size: 14pt;
+}
+
 /* Splash screen */
 
 #splash h1 {
@@ -224,4 +229,15 @@ body {
 
 .contra {
   background-color: #d78d8d9d;
+}
+
+#sarah-phil > span {
+  display: inline-block;
+  vertical-align: middle;
+  height: 300px;
+  font-size: 50pt;
+}
+
+#vsg-code code {
+  height: 80vh;
 }
