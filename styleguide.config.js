@@ -2,11 +2,7 @@ module.exports = {
   // set your styleguidist configuration here
   title: "Default Style Guide",
   // components: "./src/components/**/[A-Z]*.vue",
-  ignore: [
-    "**/Datepicker[A-Z]*.vue",
-    "**/Dropdown[A-Z]*.vue",
-    "**/HelloWorld.vue"
-  ],
+  ignore: ["**/Datepicker[A-Z]*.vue", "**/HelloWorld.vue"],
   defaultExample: true,
   // sections: [
   //   {
