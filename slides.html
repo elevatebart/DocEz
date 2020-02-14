@@ -11,6 +11,10 @@
       rel="stylesheet"
       href="./node_modules/reveal.js/css/theme/black.css"
     />
+    <link
+      rel="stylesheet"
+      href="./node_modules/reveal.js/lib/css/monokai.css"
+    />
     <link rel="stylesheet" href="./theme.css" />
   </head>
   <body>
@@ -91,7 +95,7 @@
             To help me tell you a little bit about how to go about it, here are 
             three characters that are building an amazing product.
             [click] 
-            Dominic, Sarah and Patrick are going to work together ad
+            Dominic, Sarah and phil are going to work together ad
             build a story from idea to product. [click] Here is a visual aid to
             remember who is who?
           </aside>
@@ -108,7 +112,7 @@
               </h2>
               <!-- prettier-ignore -->
               <h3 class="fragment" data-fragment-index="1">
-                <span class="fragment letter" data-fragment-index="5">D</span>esigner
+                💅 <span class="fragment letter" data-fragment-index="5">D</span>esigner 💅
               </h3>
             </div>
           </div>
@@ -125,24 +129,24 @@
               </h2>
               <!-- prettier-ignore -->
               <h3 class="fragment" data-fragment-index="2">
-                Design <span class="fragment letter" data-fragment-index="5">S</span>ystem Engineer
+                🛠 Design <span class="fragment letter" data-fragment-index="5">S</span>ystem Engineer 🛠
               </h3>
             </div>
           </div>
-          <div class="patrick">
+          <div class="phil">
             <img
               class="fragment"
-              src="img/2x/patrick.png"
+              src="img/2x/phil.png"
               data-fragment-index="4"
             />
             <div class="character-bio">
               <!-- prettier-ignore -->
               <h2 class="fragment" data-fragment-index="4">
-                <span class="fragment letter" data-fragment-index="5">P</span>atrick
+                <span class="fragment letter" data-fragment-index="5">P</span>hil
               </h2>
               <!-- prettier-ignore -->
               <h3 class="fragment" data-fragment-index="3">
-                Final <span class="fragment letter" data-fragment-index="5">P</span>roduct Developer
+                🚀 Final <span class="fragment letter" data-fragment-index="5">P</span>roduct Developer  🚀
               </h3>
             </div>
           </div>
@@ -282,6 +286,24 @@
             />
             <code class="fragment">vue add storybook</code>
           </section>
+          <section id="sb-code">
+            <h2>Button.stories.js</h2>
+            <pre class="hljs" class="javascript"><code data-trim data-noescape>
+              import MyButton from "../components/MyButton.vue";
+              import { action } from "@storybook/addon-actions";
+
+              export default {
+                component: MyButton,
+                title: "Button"
+              };
+
+              export const withText = () => ({
+                components: { MyButton },
+                template: '<my-button @click="action">Hello Button</my-button>',
+                methods: { action: action("clicked") }
+              });
+            </code></pre>
+          </section>
           <section id="sb-procontra">
             <!-- prettier-ignore -->
             <aside class="notes">
@@ -319,7 +341,7 @@
             </div>
           </section>
         </section>
-        <section id="sarah-patrick"></section>
+        <section id="sarah-phil"></section>
       </div>
     </div>
 
@@ -329,7 +351,16 @@
       Reveal.initialize({
         // Add the current slide number to the URL hash so that reloading the
         // page/copying the URL will return you to the same slide
-        hash: true
+        hash: true,
+        dependencies: [
+          {
+            src: "./node_modules/reveal.js/plugin/highlight/highlight.js",
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          }
+        ]
       });
     </script>
   </body>

@@ -13,5 +13,7 @@ module.exports = {
   //   // custom config goes here
   // },
   exampleMode: "expand",
-  require: ["./src/scss/buefy-build.scss"]
+  require: ["./src/scss/buefy-build.scss"],
+  skipComponentsWithoutExample: true,
+  usageMode: "expand"
 };
