@@ -11,7 +11,14 @@
       rel="stylesheet"
       href="./node_modules/reveal.js/css/theme/black.css"
     />
-    <link rel="stylesheet" href="./ir-black.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/prismjs/themes/prism-okaidia.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/prismjs/plugins/line-highlight/prism-line-highlight.css"
+    />
     <link rel="stylesheet" href="./theme.css" />
   </head>
   <body>
@@ -291,7 +298,7 @@
                 style="width:75px;vertical-align: middle;"
               />
             </h2>
-            <pre><code data-trim data-noescape>
+            <pre><code data-trim data-noescape class="language-jsx">
               import MyButton from "./MyButton.vue";
               import { action } from "@storybook/addon-actions";
 
@@ -301,7 +308,7 @@
               };
 
               export const withJSX = () => 
-                &lt;MyButton onClick={action(clicked)}&gt;Hello Button&lt;/MyButton&gt;
+                &lt;MyButton onClick={action("clicked")}&gt;Hello Button&lt;/MyButton&gt;
             </code></pre>
           </section>
           <section id="sb-procontra">
@@ -376,7 +383,12 @@
           </section>
           <section id="vsg-code">
             MyButton.vue
-            <pre><code data-trim data-noescape>
+            <div class="code fragment fade-out" data-fragment-index="2">
+              <pre
+                class="fragment fade-in"
+                data-fragment-index="1"
+                data-line="0-9,13-20"
+              ><code class="language-html">
               &lt;template&gt;
                 &lt;button :style="`background-color:${color}`" &gt;
                   &lt;slot /&gt;
@@ -385,20 +397,74 @@
 
               &lt;script&gt;
               export default {
-                props: {<span class="fragment">    /**
-                    * Background color given to the button
-                    */</span>    color: {
+                props: { 
+                  /**
+                    * Background of button
+                    */   
+                  color: {
                     type: String,
                     default: "blue"
                   }
                 }
               }
               &lt;/script&gt;
-              <span class="fragment">
+            </code></pre>
+            </div>
+            <div class="code">
+              <pre
+                class="fragment fade-in"
+                data-fragment-index="2"
+                data-line="9-25"
+              ><code class="language-html">
               &lt;docs&gt;
-              # This is how the button is used
+              # How to use a button
+
+              ```vue
+              &lt;Button&gt;Live Examples&lt;/Button&gt;
+              ```
               &lt;/docs&gt;
-              </span>
+
+              &lt;template&gt;
+                &lt;button :style="`background-color:${color}`" &gt;
+                  &lt;slot /&gt;
+                &lt;/button&gt;
+              &lt;/template&gt;
+
+              &lt;script&gt;
+              export default {
+                props: { 
+                  /**
+                    * Background of button
+                    */   
+                  color: {
+                    type: String,
+                    default: "blue"
+                  }
+                }
+              }
+              &lt;/script&gt;
+            </code></pre>
+            </div>
+            <pre
+              class="fragment fade-out"
+              data-fragment-index="1"
+            ><code class="language-html">
+              &lt;template&gt;
+                &lt;button :style="`background-color:${color}`" &gt;
+                  &lt;slot /&gt;
+                &lt;/button&gt;
+              &lt;/template&gt;
+
+              &lt;script&gt;
+              export default {
+                props: {    
+                  color: {
+                    type: String,
+                    default: "blue"
+                  }
+                }
+              }
+              &lt;/script&gt;
             </code></pre>
           </section>
         </section>
@@ -406,21 +472,29 @@
     </div>
 
     <script src="./node_modules/reveal.js/js/reveal.js"></script>
+    <script src="./node_modules/prismjs/prism.js"></script>
+    <script src="./node_modules/prismjs/components/prism-jsx.min.js"></script>
+    <script src="./node_modules/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+    <script src="./node_modules/prismjs/plugins/line-highlight/prism-line-highlight.min.js"></script>
+    <script>
+      Prism.plugins.NormalizeWhitespace.setDefaults({
+        // "break-lines": 80,
+        // indent: 2,
+        // "remove-initial-line-feed": false,
+        // "tabs-to-spaces": 4,
+        // "spaces-to-tabs": 4,
+        "remove-trailing": true,
+        "remove-indent": true,
+        "left-trim": true,
+        "right-trim": true
+      });
+    </script>
 
     <script>
       Reveal.initialize({
         // Add the current slide number to the URL hash so that reloading the
         // page/copying the URL will return you to the same slide
-        hash: true,
-        dependencies: [
-          {
-            src: "./node_modules/reveal.js/plugin/highlight/highlight.js",
-            async: true,
-            callback: function() {
-              hljs.initHighlightingOnLoad();
-            }
-          }
-        ]
+        hash: true
       });
     </script>
   </body>

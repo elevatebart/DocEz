@@ -239,14 +239,30 @@ pre[class*="language-"] {
 }
 
 #vsg-code code {
-  max-height: 86vh;
+  max-height: 80vh;
 }
 
-#vsg-code .fragment {
-  height: 0;
-  display: block;
+#vsg-code pre {
+  overflow: hidden;
 }
 
-#vsg-code .fragment.visible {
-  height: auto;
+#vsg-code > div.code {
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+.line-highlight {
+  background: #000;
+  opacity: 0.5;
+  margin-top: 25px;
+}
+
+.line-highlight:before,
+.line-highlight:after {
+  display: none;
+}
+
+pre[data-line] {
+  padding: 1em;
 }
