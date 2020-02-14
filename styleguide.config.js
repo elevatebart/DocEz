@@ -1,8 +1,13 @@
 module.exports = {
   // set your styleguidist configuration here
   title: "Default Style Guide",
-  // components: "src/components/**/[A-Z]*.vue",
-  // defaultExample: true,
+  // components: "./src/components/**/[A-Z]*.vue",
+  ignore: [
+    "**/Datepicker[A-Z]*.vue",
+    "**/Dropdown[A-Z]*.vue",
+    "**/HelloWorld.vue"
+  ],
+  defaultExample: true,
   // sections: [
   //   {
   //     name: 'First Section',
@@ -13,7 +18,7 @@ module.exports = {
   //   // custom config goes here
   // },
   exampleMode: "expand",
-  require: ["./src/scss/buefy-build.scss"],
-  skipComponentsWithoutExample: true,
-  usageMode: "expand"
+  require: ["./src/scss/buefy-build.scss"]
+  // skipComponentsWithoutExample: true,
+  // usageMode: "expand"
 };

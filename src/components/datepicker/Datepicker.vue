@@ -1,9 +1,3 @@
-<docs>
-```jsx
-<BDatepicker />
-```
-</docs>
-
 <template>
   <div class="datepicker control" :class="[size, { 'is-expanded': expanded }]">
     <b-dropdown
@@ -55,12 +49,7 @@
               @keydown.enter.prevent="prev"
               @keydown.space.prevent="prev"
             >
-              <b-icon
-                :icon="iconPrev"
-                :pack="iconPack"
-                both
-                type="is-primary is-clickable"
-              />
+              <b-icon :icon="iconPrev" :pack="iconPack" both type="is-primary is-clickable" />
             </a>
             <a
               v-show="!showNext && !disabled"
@@ -72,12 +61,7 @@
               @keydown.enter.prevent="next"
               @keydown.space.prevent="next"
             >
-              <b-icon
-                :icon="iconNext"
-                :pack="iconPack"
-                both
-                type="is-primary is-clickable"
-              />
+              <b-icon :icon="iconNext" :pack="iconPack" both type="is-primary is-clickable" />
             </a>
             <div class="pagination-list">
               <b-field>
@@ -92,18 +76,10 @@
                     :value="month.index"
                     :key="month.name"
                     :disabled="month.disabled"
-                  >
-                    {{ month.name }}
-                  </option>
+                  >{{ month.name }}</option>
                 </b-select>
-                <b-select
-                  v-model="focusedDateData.year"
-                  :disabled="disabled"
-                  :size="size"
-                >
-                  <option v-for="year in listOfYears" :value="year" :key="year">
-                    {{ year }}
-                  </option>
+                <b-select v-model="focusedDateData.year" :disabled="disabled" :size="size">
+                  <option v-for="year in listOfYears" :value="year" :key="year">{{ year }}</option>
                 </b-select>
               </b-field>
             </div>
