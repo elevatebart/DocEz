@@ -30,7 +30,8 @@ Change theme and tryout configuration using the docs
 
 [Compare Storybook & Styleguidist](https://blog.hichroma.com/storybook-vs-styleguidist-2bd93d6dcc06)
 
-## Thank you
+## Special Thanks
 
-Illustrations [Lukasz Adam](https://lukaszadam.com/illustrations)
-Rehearsals @shortdiv
+For Illustrations [Lukasz Adam](https://lukaszadam.com/illustrations)
+For Rehearsals @shortdiv
+For Supporting the library @JessicaSachs
