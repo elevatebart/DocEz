@@ -31,9 +31,9 @@ Change theme and tryout configuration using the docs
 ## Useful Links
 
 [Compare Storybook & Styleguidist](https://blog.hichroma.com/storybook-vs-styleguidist-2bd93d6dcc06)
+[Storybook Blog](https://medium.com/storybookjs)
 
 ## Special Thanks
 
 For Illustrations [Lukasz Adam](https://lukaszadam.com/illustrations)
 For Rehearsals @shortdiv
-For Supporting the library @JessicaSachs

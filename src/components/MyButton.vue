@@ -1,19 +1,36 @@
 <template>
-  <button class="button is-primary" @click="onClick">
+  <button
+    class="button is-primary"
+    :style="`background-color:${color};color:white`"
+    @click="onClick"
+  >
+    <!-- @slot text of the button -->
     <slot></slot>
   </button>
 </template>
 
 <script>
 export default {
-  name: 'my-button',
-
+  name: "my-button",
+  props: {
+    /**
+     * Set the background color of the button
+     * @values red, blue, green
+     */
+    color: {
+      type: String,
+      default: "blue"
+    }
+  },
   methods: {
     onClick() {
-      this.$emit('click')
+      /**
+       * When clicking on the button this event is fired
+       */
+      this.$emit("click");
     }
   }
-}
+};
 </script>
 
 <style scoped>
@@ -27,3 +44,13 @@ button {
   margin: 10px;
 }
 </style>
+
+<docs>
+How to use a button
+
+![example of makdown image](../../img/VueLand.png)
+
+```vue
+<Button>Live Examples</Button>
+```
+</docs>

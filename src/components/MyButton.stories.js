@@ -1,5 +1,6 @@
 import { action } from "@storybook/addon-actions";
 import { linkTo } from "@storybook/addon-links";
+import { text } from "@storybook/addon-knobs";
 
 import MyButton from "./MyButton.vue";
 
@@ -15,10 +16,15 @@ export const withText = () => ({
 });
 
 export const withJSX = () => ({
+  props: {
+    content: {
+      default: text("Button Name", "Click Me")
+    }
+  },
   render() {
     return (
       <MyButton onClick={linkTo("Button", "With Some Emoji")}>
-        With JSX
+        {this.content}
       </MyButton>
     );
   }
