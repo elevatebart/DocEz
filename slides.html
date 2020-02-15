@@ -183,11 +183,7 @@
             style="width:200px"
           />
           <div class="fragment fade-out" data-fragment-index="3">
-            <img
-              class="fragment fade-in"
-              data-fragment-index="1"
-              src="img/blurrg.jpg"
-            />
+            <img src="img/blurrg.jpg" />
           </div>
           <p class="fragment" data-fragment-index="2">
             Oh! I don't have time for this<span
@@ -325,7 +321,7 @@
             </h2>
             <div class="pro-contra">
               <div class="fragment pro">
-                <h3>Pros</h3>
+                <h3>Cool !</h3>
                 <ul>
                   <li>Very Popular</li>
                   <li>Knobs & Actions</li>
@@ -335,7 +331,7 @@
                 <img src="img/ChromaticQALogo.png" style="width: 200px;" />
               </div>
               <div class="fragment contra">
-                <h3>Contras</h3>
+                <h3>Not so cool</h3>
                 <ul>
                   <li>JSX</li>
                   <li>Theming in ReactJs</li>
@@ -382,7 +378,7 @@
             <code class="fragment">vue add styleguidist</code>
           </section>
           <section id="vsg-code">
-            MyButton.vue
+            <h2>MyButton.vue</h2>
             <div class="code fragment fade-out" data-fragment-index="2">
               <pre
                 class="fragment fade-in"
@@ -414,8 +410,14 @@
               <pre
                 class="fragment fade-in"
                 data-fragment-index="2"
-                data-line="9-25"
+                data-line="0-6,14-25"
               ><code class="language-html">
+              &lt;template&gt;
+                &lt;button :style="`background-color:${color}`" &gt;
+                  &lt;slot /&gt;
+                &lt;/button&gt;
+              &lt;/template&gt;
+
               &lt;docs&gt;
               # How to use a button
 
@@ -423,12 +425,6 @@
               &lt;Button&gt;Live Examples&lt;/Button&gt;
               ```
               &lt;/docs&gt;
-
-              &lt;template&gt;
-                &lt;button :style="`background-color:${color}`" &gt;
-                  &lt;slot /&gt;
-                &lt;/button&gt;
-              &lt;/template&gt;
 
               &lt;script&gt;
               export default {
@@ -467,6 +463,68 @@
               &lt;/script&gt;
             </code></pre>
           </section>
+          <section id="vsg-procontra">
+            <h2>
+              Vue Styleguidist<img
+                src="img/styleguidist.png"
+                style="width:50px;margin-left:20px;vertical-align: middle;"
+              />
+            </h2>
+            <div class="pro-contra">
+              <div class="fragment pro">
+                <h3>Cool !</h3>
+                <ul>
+                  <li>Automated Props</li>
+                  <li>Default Examples</li>
+                  <li>Documentation in Code</li>
+                  <li>Live Editor</li>
+                  <li>Markdown</li>
+                  <li>
+                    Customizations
+                    <ul>
+                      <li>Theming</li>
+                      <li>Free text pages</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="fragment contra">
+                <h3>Not so cool</h3>
+                <ul>
+                  <li>JSDoc is Verbose</li>
+                  <li>Customization in ReactJs</li>
+                  <img
+                    src="img/React.png"
+                    style="margin-top:128px; width: 200px;"
+                  />
+                </ul>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section id="future">
+          <h1>...Made Easy</h1>
+          <div class="sb-docs">
+            <h2>Storybook Docs</h2>
+            <img src="img/storybook.png" style="width: 70px;float:right;" />
+            <ul>
+              <li>Free Text Pages</li>
+              <li>Props and slots</li>
+              <li>Theming</li>
+            </ul>
+          </div>
+          <div class="docgen-cli">
+            <h2>vue-docgen-cli</h2>
+            <img src="img/styleguidist.png" style="width: 70px;float:left;" />
+            <ul>
+              <li>Choose the redering</li>
+              <li>Integrates with vuepress/nuxt</li>
+              <li>out with React</li>
+            </ul>
+          </div>
+        </section>
+        <section id="conclusion">
+          <h2>Be nice</h2>
         </section>
       </div>
     </div>

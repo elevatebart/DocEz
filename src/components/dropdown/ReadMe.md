@@ -1,6 +1,10 @@
 This is how to use a dropdown
 
 ```jsx
+import Vue from 'vue'
+import BDropdownItem from './DropdownItem.vue'
+Vue.component('BDropdownItem', BDropdownItem)
+
 <BDropdown>
     <button class="button is-primary" slot="trigger">
         <span>Click me!</span>

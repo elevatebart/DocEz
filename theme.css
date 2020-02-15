@@ -89,6 +89,21 @@ pre[class*="language-"] {
   font-size: 14pt;
 }
 
+.line-highlight {
+  background: #000;
+  opacity: 0.5;
+  margin-top: 25px;
+}
+
+.line-highlight:before,
+.line-highlight:after {
+  display: none;
+}
+
+pre[data-line] {
+  padding: 1em;
+}
+
 /* Splash screen */
 
 #splash h1 {
@@ -252,17 +267,12 @@ pre[class*="language-"] {
   left: 0;
 }
 
-.line-highlight {
-  background: #000;
-  opacity: 0.5;
-  margin-top: 25px;
+#future ul {
+  width: 400px;
 }
 
-.line-highlight:before,
-.line-highlight:after {
-  display: none;
-}
-
-pre[data-line] {
-  padding: 1em;
+#future .sb-docs,
+#future .docgen-cli {
+  width: 550px;
+  margin: 30px auto 0;
 }
