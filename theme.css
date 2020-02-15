@@ -122,7 +122,7 @@ pre[data-line] {
 }
 
 #splash .fragment.avatar-splash.visible {
-  transform: translate3d(-15vw, -25vh, 0) scale3d(1.5, 1.5, 1);
+  transform: translate3d(-10vw, -20vh, 0) scale3d(1.4, 1.4, 1);
 }
 
 #splash .presentation {
@@ -273,6 +273,25 @@ pre[data-line] {
 
 #future .sb-docs,
 #future .docgen-cli {
-  width: 550px;
-  margin: 30px auto 0;
+  width: 600px;
+  margin: 0 auto 30px;
+}
+
+#future .sb-docs img,
+#future .docgen-cli img {
+  width: 70px;
+  margin: 0 30px;
+}
+
+#future .sb-docs img {
+  float: right;
+}
+
+#future .docgen-cli img {
+  float: left;
+}
+
+#conclusion img {
+  width: 300px;
+  border-radius: 5%;
 }
