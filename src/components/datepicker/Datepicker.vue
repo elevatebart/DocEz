@@ -233,6 +233,14 @@ export default {
     value: {
       type: [Date, Array]
     },
+    range: {
+      type: Boolean,
+      default: false
+    },
+    closeOnClick: {
+      type: Boolean,
+      default: true
+    },
     dayNames: {
       type: Array,
       default: () => {
@@ -369,14 +377,6 @@ export default {
     rulesForFirstWeek: {
       type: Number,
       default: () => 4
-    },
-    range: {
-      type: Boolean,
-      default: false
-    },
-    closeOnClick: {
-      type: Boolean,
-      default: true
     },
     multiple: {
       type: Boolean,
