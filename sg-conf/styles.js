@@ -10,5 +10,12 @@ export default {
         color: "#FFFFFF"
       }
     }
+  },
+  Type: {
+    type: {
+      "& pre": {
+        padding: "3px 4px"
+      }
+    }
   }
 };
