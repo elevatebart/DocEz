@@ -1,16 +1,15 @@
 module.exports = {
   // set your styleguidist configuration here
   title: "Default Style Guide",
-  components: "./src/components/MyButton.vue",
-  // styles: "./sg-conf/styles.js",
-  // theme: "./sg-conf/theme.js",
+  styles: "./sg-conf/styles.js",
+  theme: "./sg-conf/theme.js",
   // components: "./src/components/**/[A-Z]*.vue",
-  // ignore: [
-  //   "**/Datepicker[A-Z]*.vue",
-  //   "**/Dropdown[A-Z]*.vue",
-  //   "**/HelloWorld.vue",
-  //   "**/MyButton.vue"
-  // ],
+  ignore: [
+    "**/Datepicker[A-Z]*.vue",
+    "**/Dropdown[A-Z]*.vue",
+    "**/HelloWorld.vue",
+    "**/MyButton.vue"
+  ],
   defaultExample: true,
   // sections: [
   //   {
@@ -18,11 +17,8 @@ module.exports = {
   //     components: 'src/components/**/[A-Z]*.vue'
   //   }
   // ],
-  // webpackConfig: {
-  //   // custom config goes here
-  // },
-  // require: ["./src/scss/buefy-build.scss"],
+  require: ["./src/scss/buefy-build.scss"],
   // skipComponentsWithoutExample: true,
-  usageMode: "expand",
+  // usageMode: "expand",
   exampleMode: "expand"
 };
