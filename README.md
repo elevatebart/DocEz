@@ -5,7 +5,9 @@ Slides and demo material for Component Documentation made Easy
 ## Contact me
 
 [Twitter](https://twitter.com/elevatebart)
+
 [Discord](https://discordapp.com/users/363353019187724288)
+
 [Chicago VueJs Meetup](https://www.meetup.com/fr-FR/Chicago-Vue-js/)
 
 ## Run storybook
