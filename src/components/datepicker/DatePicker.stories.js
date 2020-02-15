@@ -1,20 +1,20 @@
 import { action } from "@storybook/addon-actions";
-import { boolean } from "@storybook/addon-knobs";
 
 import DatePicker from "./Datepicker.vue";
 
 export default {
   component: DatePicker,
-  title: "DatePicker"
+  title: "Date Picker"
 };
 
-export const withAKnob = () => ({
-  props: {
-    close: {
-      default: boolean("close on click", true)
-    }
-  },
+export const basic = () => ({
   render() {
-    return <DatePicker onInput={action("input")} closeOnClick={this.close} />;
+    return <DatePicker onInput={action("input")} />;
+  }
+});
+
+export const closeOnClickDemo = () => ({
+  render() {
+    return <DatePicker onInput={action("input")} closeOnClick={false} />;
   }
 });
