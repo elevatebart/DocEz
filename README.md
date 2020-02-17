@@ -43,7 +43,7 @@ Change theme, see examples and tryout various configurations
 ## Special Thanks
 
 - For Illustrations [Lukasz Adam](https://lukaszadam.com/illustrations)
-- For rehearsals [Divya Sasidaran](https://github.com/shortdiv)
+- For rehearsals [Divya Sasidharan](https://github.com/shortdiv)
 - For creating Vue Styleguidist 1 & 2 [Rafael Escala](https://github.com/rafaesc)
 - For inspiration on the talk [Jessica Sachs](https://github.com/JessicaSachs) & [Evan Sparkman](https://github.com/esparkman)
 - For your precious help on the abstract and the CFP process [Gregg Pollack](https://github.com/Gregg)
