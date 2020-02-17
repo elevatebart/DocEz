@@ -226,11 +226,23 @@ pre[data-line] {
   flex: 1;
   margin: 0 20px;
   padding: 20px 0;
+  height: 50vh;
+  position: relative;
 }
 
 .reveal section .pro-contra img {
   display: block;
-  margin: 50px auto;
+  position: absolute;
+  bottom: 30px;
+  width: 200px;
+  left: 50%;
+  margin-left: -100px;
+}
+
+h2.fragment.recap {
+  margin-top: 22vh;
+  position: absolute;
+  width: 100%;
 }
 
 .pro-contra ul {
@@ -267,6 +279,11 @@ pre[data-line] {
   left: 0;
 }
 
+#vsg-code > div.code > pre {
+  filter: brightness(200%);
+  margin: 0;
+}
+
 #future ul {
   width: 400px;
 }
@@ -277,18 +294,22 @@ pre[data-line] {
   margin: 0 auto 30px;
 }
 
-#future .sb-docs img,
-#future .docgen-cli img {
+#sb-docs img,
+#vsg-cli img {
   width: 70px;
-  margin: 0 30px;
-}
-
-#future .sb-docs img {
-  float: right;
-}
-
-#future .docgen-cli img {
+  margin: 30px;
   float: left;
+}
+
+#sb-docs div,
+#vsg-cli div {
+  width: 600px;
+  margin: auto;
+}
+#sb-docs ul,
+#vsg-cli ul {
+  display: block;
+  margin-left: 150px;
 }
 
 #conclusion img {

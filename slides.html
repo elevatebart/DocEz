@@ -334,27 +334,27 @@
                 style="width:50px;vertical-align: middle;"
               />
             </h2>
+            <h2 class="recap fragment fade-out" data-fragment-index="1">
+              Recap
+            </h2>
             <div class="pro-contra">
-              <div class="fragment pro">
+              <div class="fragment pro" data-fragment-index="1">
                 <h3>Cool !</h3>
                 <ul>
                   <li>Very Popular</li>
                   <li>Knobs & Actions</li>
-                  <li>MDX</li>
+                  <li>JSX</li>
                   <li>Backed by Chromatic QA</li>
                 </ul>
-                <img src="img/ChromaticQALogo.png" style="width: 200px;" />
+                <img src="img/ChromaticQALogo.png" />
               </div>
-              <div class="fragment contra">
+              <div class="fragment contra" data-fragment-index="2">
                 <h3>Not so cool</h3>
                 <ul>
                   <li>JSX</li>
                   <li>Theming in ReactJs</li>
                   <li>No Vue Dev Tools</li>
-                  <img
-                    src="img/React.png"
-                    style="margin-top:110px; width: 200px;"
-                  />
+                  <img src="img/React.png" />
                 </ul>
               </div>
             </div>
@@ -402,7 +402,7 @@
               <pre
                 class="fragment fade-in"
                 data-fragment-index="1"
-                data-line="0-9,13-20"
+                data-line="0-9,14-21"
               ><code class="language-html">
               &lt;template&gt;
                 &lt;button :style="`background-color:${color}`" &gt;
@@ -415,6 +415,7 @@
                 props: { 
                   /**
                     * Background of button
+                    * @values blue, red, green
                     */   
                   color: {
                     type: String,
@@ -429,7 +430,7 @@
               <pre
                 class="fragment fade-in"
                 data-fragment-index="2"
-                data-line="0-6,14-25"
+                data-line="0-6,14-26"
               ><code class="language-html">
               &lt;template&gt;
                 &lt;button :style="`background-color:${color}`" &gt;
@@ -450,6 +451,7 @@
                 props: { 
                   /**
                     * Background of button
+                    * @values blue, red, green
                     */   
                   color: {
                     type: String,
@@ -523,8 +525,11 @@
         </section>
         <section id="future">
           <h1>...Made Easy</h1>
-          <div class="sb-docs">
-            <h2>Storybook Docs</h2>
+          <div class="docgen-cli"></div>
+        </section>
+        <section id="sb-docs">
+          <h2>Storybook Docs</h2>
+          <div>
             <img src="img/storybook.png" />
             <ul>
               <li>Free Text Pages</li>
@@ -532,8 +537,10 @@
               <li>Theming</li>
             </ul>
           </div>
-          <div class="docgen-cli">
-            <h2>vue-docgen-cli</h2>
+        </section>
+        <section id="vsg-cli">
+          <h2>vue-docgen-cli</h2>
+          <div>
             <img src="img/styleguidist.png" />
             <ul>
               <li>B.Y.O. rendering</li>
@@ -547,7 +554,7 @@
           <img src="img/needyou.jpg" />
         </section>
         <section id="thanks">
-          <h4>QR Code: Slides & Demo GitHub</h4>
+          <h4>QR Code: Slides & Demo</h4>
           <img src="img/Repo_Link.svg" style="width:200px;" />
           <h1>Thank you</h1>
           <div>
