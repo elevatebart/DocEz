@@ -303,9 +303,51 @@ h2.fragment.recap {
 #sb-docs div,
 #vsg-cli div {
   width: 600px;
+  height: 400px;
   margin: 50px auto;
   display: flex;
   align-items: center;
+}
+
+#sb-docs div .pipe-glyph,
+#vsg-cli div .pipe-glyph {
+  height: 50px;
+  margin: 30px;
+}
+
+.reveal .slides section .fragment.docgen-effect {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.reveal .slides section#vsg-cli .fragment.slide-in-down {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 400px;
+  margin-left: -200px;
+}
+
+.reveal .slides section#vsg-cli .fragment.slide-in-down.visible {
+  top: 84px;
+}
+
+.reveal .slides section .fragment.slide-down.visible {
+  top: 40vh;
+  opacity: 0;
+}
+
+.reveal .slides section .fragment.slide-left.visible {
+  left: -150px;
+}
+
+.reveal .slides section .fragment.slide-right.visible {
+  right: -150px;
+  left: auto;
 }
 
 #conclusion img {
