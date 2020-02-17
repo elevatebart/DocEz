@@ -43,8 +43,8 @@ Change theme, see examples and tryout various configurations
 ## Special Thanks
 
 - For Illustrations [Lukasz Adam](https://lukaszadam.com/illustrations)
-- For rehearsals @shortdiv
-- For creating Vue Styleguidist 1 & 2 @rafaesc
-- For inspiration on the talk @JessicaSachs & @esparkman
-- For your precious help on the abstract and the CFP process @Gregg
-- For all the help on the StoryBook demos @mshilman, @ndelangen and @AaronPool
+- For rehearsals [Divya Sasidaran](https://github.com/shortdiv)
+- For creating Vue Styleguidist 1 & 2 [Rafael Escala](https://github.com/rafaesc)
+- For inspiration on the talk [Jessica Sachs](https://github.com/JessicaSachs) & [Evan Sparkman](https://github.com/esparkman)
+- For your precious help on the abstract and the CFP process [Gregg Pollack](https://github.com/Gregg)
+- For all the help on the StoryBook demos [Michael Shilman](https://github.com/shilman), [Norbert de Langen](https://github.com/ndelangen) and [Aaron Pool](https://github.com/Aaron-Pool)
