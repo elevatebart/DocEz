@@ -232,17 +232,17 @@ pre[data-line] {
   flex: 1;
   margin: 0 20px;
   padding: 20px 0;
-  height: 50vh;
+  height: 55vh;
   position: relative;
 }
 
 .reveal section .pro-contra img {
   display: block;
   position: absolute;
-  bottom: 30px;
-  width: 200px;
+  bottom: 3%;
+  width: 150px;
   left: 50%;
-  margin-left: -100px;
+  margin-left: -75px;
 }
 
 h2.fragment.recap {
@@ -254,6 +254,7 @@ h2.fragment.recap {
 .pro-contra ul {
   padding: 0;
   margin: 0;
+  padding-bottom: 20px;
 }
 
 .pro {
@@ -294,7 +295,7 @@ h2.fragment.recap {
 
 #sb-docs div,
 #vsg-cli div {
-  width: 600px;
+  width: 60vw;
   height: 400px;
   margin: 50px auto;
   display: flex;
