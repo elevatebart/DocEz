@@ -412,16 +412,6 @@
               &lt;/script&gt;
             </code></pre>
             <div class="fragment" />
-            <script>
-              function initVsgCode() {
-                Reveal.addEventListener("fragmentshown", function(event) {
-                  // event.fragment = the fragment DOM element
-                  if (event.fragment.matches("#vsg-code pre")) {
-                    console.log("pre fragment");
-                  }
-                });
-              }
-            </script>
           </section>
           <section id="vsg-procontra">
             <h2>Vue Styleguidist<img src="img/styleguidist.png" /></h2>
@@ -561,9 +551,6 @@
         // page/copying the URL will return you to the same slide
         hash: true
       });
-    </script>
-    <script>
-      initVsgCode();
     </script>
   </body>
 </html>

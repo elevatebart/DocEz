@@ -1,15 +1,17 @@
 <template>
-  <button
-    class="button is-primary"
-    :style="`background-color:${color};color:white`"
-    @click="onClick"
-  >
+  <button :class="`button ${colorClass}`" @click="onClick">
     <!-- @slot text of the button -->
     <slot></slot>
   </button>
 </template>
 
 <script>
+const COLOR_MAP = {
+  blue: "is-primary",
+  green: "is-success",
+  red: "is-danger"
+};
+
 export default {
   name: "my-button",
   props: {
@@ -20,6 +22,11 @@ export default {
     color: {
       type: String,
       default: "blue"
+    }
+  },
+  computed: {
+    colorClass() {
+      return COLOR_MAP[this.color];
     }
   },
   methods: {
@@ -46,11 +53,17 @@ button {
 </style>
 
 <docs>
-How to use a button
+### General guidance
 
-![example of makdown image](../../img/VueLand.png)
+**Buttons are used to initialize an action.** Button labels express what action will occur when the user interacts with it.
+
+**Buttons are used primarily for actions.** Examples include Add, Save, Delete, and Sign up. Each page should have one primary button, and a Return or Enter keyboard event should trigger it. Any remaining calls-to-action should be represented as secondary buttons.
+
+**Do not use buttons as navigational elements.** Instead, use links when the desired action is to take the user to a new page.
+
+**Primary buttons always appear to the right.** Secondary buttons appear to the left of the primary button.
 
 ```vue
-<Button>Live Examples</Button>
+<my-button>Live Examples</my-button>
 ```
 </docs>
