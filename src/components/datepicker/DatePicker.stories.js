@@ -12,9 +12,3 @@ export const basic = () => ({
     return <DatePicker onInput={action("input")} />;
   }
 });
-
-export const closeOnClickDemo = () => ({
-  render() {
-    return <DatePicker onInput={action("input")} closeOnClick={false} />;
-  }
-});
