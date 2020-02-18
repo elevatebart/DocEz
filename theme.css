@@ -271,33 +271,25 @@ h2.fragment.recap {
   font-size: 50pt;
 }
 
+#vsg-code .fragment {
+  height: 0;
+}
+
+#vsg-code .fragment.visible {
+  filter: brightness(150%);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#vsg-code .fragment.propComment.visible {
+  height: 105px;
+}
+
+#vsg-code .fragment.slotComment.visible {
+  height: 26px;
+}
+
 #vsg-code code {
-  max-height: 80vh;
-}
-
-#vsg-code pre {
-  overflow: hidden;
-}
-
-#vsg-code > div.code {
-  position: absolute;
-  right: 0;
-  left: 0;
-}
-
-#vsg-code > div.code > pre {
-  filter: brightness(200%);
-  margin: 0;
-}
-
-#future ul {
-  width: 400px;
-}
-
-#future .sb-docs,
-#future .docgen-cli {
-  width: 600px;
-  margin: 0 auto 30px;
+  overflow: visible;
 }
 
 #sb-docs div,

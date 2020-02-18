@@ -392,26 +392,18 @@
           </section>
           <section id="vsg-code">
             <h2>MyButton.vue<img src="img/styleguidist.png" /></h2>
-            <div class="code fragment fade-out" data-fragment-index="2">
-              <pre
-                class="fragment fade-in"
-                data-fragment-index="1"
-                data-line="0-9,14-21"
-              ><code class="language-html">
+            <pre><code class="language-html">
               &lt;template&gt;
-                &lt;button :style="`background-color:${color}`" &gt;
-                  &lt;slot /&gt;
+                &lt;button :style="`background-color:${color}`" &gt;<div class="fragment slotComment" data-fragment-index="1">    &lt;!-- @slot text of the button --&gt;</div>    &lt;slot /&gt;
                 &lt;/button&gt;
               &lt;/template&gt;
 
               &lt;script&gt;
               export default {
-                props: { 
-                  /**
-                    * Background of button
-                    * @values blue, red, green
-                    */   
-                  color: {
+                props: {<div class="fragment propComment" data-fragment-index="1">    /**
+                   * Set the background color of the button
+                   * @values blue, red, green
+                   */</div>    color: {
                     type: String,
                     default: "blue"
                   }
@@ -419,64 +411,17 @@
               }
               &lt;/script&gt;
             </code></pre>
-            </div>
-            <div class="code">
-              <pre
-                class="fragment fade-in"
-                data-fragment-index="2"
-                data-line="0-6,14-26"
-              ><code class="language-html">
-              &lt;template&gt;
-                &lt;button :style="`background-color:${color}`" &gt;
-                  &lt;slot /&gt;
-                &lt;/button&gt;
-              &lt;/template&gt;
-
-              &lt;docs&gt;
-              # How to use a button
-
-              ```vue
-              &lt;Button&gt;Live Examples&lt;/Button&gt;
-              ```
-              &lt;/docs&gt;
-
-              &lt;script&gt;
-              export default {
-                props: { 
-                  /**
-                    * Background of button
-                    * @values blue, red, green
-                    */   
-                  color: {
-                    type: String,
-                    default: "blue"
+            <div class="fragment" />
+            <script>
+              function initVsgCode() {
+                Reveal.addEventListener("fragmentshown", function(event) {
+                  // event.fragment = the fragment DOM element
+                  if (event.fragment.matches("#vsg-code pre")) {
+                    console.log("pre fragment");
                   }
-                }
+                });
               }
-              &lt;/script&gt;
-            </code></pre>
-            </div>
-            <pre
-              class="fragment fade-out"
-              data-fragment-index="1"
-            ><code class="language-html">
-              &lt;template&gt;
-                &lt;button :style="`background-color:${color}`" &gt;
-                  &lt;slot /&gt;
-                &lt;/button&gt;
-              &lt;/template&gt;
-
-              &lt;script&gt;
-              export default {
-                props: {    
-                  color: {
-                    type: String,
-                    default: "blue"
-                  }
-                }
-              }
-              &lt;/script&gt;
-            </code></pre>
+            </script>
           </section>
           <section id="vsg-procontra">
             <h2>Vue Styleguidist<img src="img/styleguidist.png" /></h2>
@@ -528,7 +473,8 @@
             />
             <ul>
               <li>Free Text Pages</li>
-              <li>Props and slots</li>
+              <li>Stories in MDX Files</li>
+              <li>Props and slots detection</li>
               <li>Theming</li>
             </ul>
           </div>
@@ -594,6 +540,7 @@
     <script src="./node_modules/prismjs/components/prism-jsx.min.js"></script>
     <script src="./node_modules/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
     <script src="./node_modules/prismjs/plugins/line-highlight/prism-line-highlight.min.js"></script>
+    <script src="./node_modules/prismjs/plugins/keep-markup/prism-keep-markup.min.js"></script>
     <script>
       Prism.plugins.NormalizeWhitespace.setDefaults({
         // "break-lines": 80,
@@ -614,6 +561,9 @@
         // page/copying the URL will return you to the same slide
         hash: true
       });
+    </script>
+    <script>
+      initVsgCode();
     </script>
   </body>
 </html>
