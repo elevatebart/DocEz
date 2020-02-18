@@ -117,6 +117,11 @@ pre[data-line] {
   width: 100px;
 }
 
+.reveal .slides img.char-large {
+  width: 200px;
+  margin: 50px;
+}
+
 /* Splash screen */
 
 #splash h1 {
@@ -257,9 +262,9 @@ pre[data-line] {
   display: block;
   position: absolute;
   bottom: 3%;
-  width: 150px;
+  width: 10vh;
   left: 50%;
-  margin-left: -75px;
+  margin-left: -5vh;
 }
 
 h2.fragment.recap {
@@ -356,7 +361,7 @@ h2.fragment.recap {
   right: 0;
 }
 
-.reveal .slides section#vsg-cli .fragment.slide-in-down {
+#vsg-cli .fragment.slide-in-down {
   position: absolute;
   top: 0;
   left: 50%;
@@ -364,8 +369,23 @@ h2.fragment.recap {
   margin-left: -200px;
 }
 
-.reveal .slides section#vsg-cli .fragment.slide-in-down.visible {
+#vsg-cli .fragment.slide-in-down.visible {
   top: 84px;
+}
+
+#vsg-cli .who-it-is-for {
+  left: auto;
+  right: 9%;
+  bottom: 0;
+  width: 70px;
+}
+
+#vsg-cli .who-it-is-for:last-child {
+  right: 15%;
+}
+
+#vsg-cli .who-it-is-for:first-of-type {
+  right: 3%;
 }
 
 .reveal .slides section .fragment.slide-down.visible {
