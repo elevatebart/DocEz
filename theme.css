@@ -110,6 +110,13 @@ pre[data-line] {
   margin: 0 20px;
 }
 
+.reveal .slides img.who-it-is-for {
+  position: absolute;
+  bottom: 3%;
+  left: 10%;
+  width: 100px;
+}
+
 /* Splash screen */
 
 #splash h1 {
@@ -222,7 +229,17 @@ pre[data-line] {
   width: 92px;
 }
 
+#sb-code .who-it-is-for {
+  left: auto;
+  right: 10%;
+}
+
 /* pro-contra */
+#sb-procontra .who-it-is-for {
+  left: 50%;
+  margin-left: -50px;
+}
+
 .pro-contra {
   display: flex;
 }
@@ -272,6 +289,13 @@ h2.fragment.recap {
   font-size: 50pt;
 }
 
+/* vsg */
+
+#vsg-code .who-it-is-for {
+  left: auto;
+  right: 10%;
+}
+
 #vsg-code .fragment {
   height: 0;
 }
@@ -291,6 +315,21 @@ h2.fragment.recap {
 
 #vsg-code code {
   overflow: visible;
+}
+
+#vsg-procontra .who-it-is-for {
+  left: auto;
+  right: 0;
+}
+
+#vsg-procontra .who-it-is-for:last-child {
+  left: auto;
+  right: 12%;
+}
+
+#sb-docs .who-it-is-for {
+  left: auto;
+  right: 5%;
 }
 
 #sb-docs div,
@@ -335,11 +374,11 @@ h2.fragment.recap {
 }
 
 .reveal .slides section .fragment.slide-left.visible {
-  left: -150px;
+  left: -120px;
 }
 
 .reveal .slides section .fragment.slide-right.visible {
-  right: -150px;
+  right: -120px;
   left: auto;
 }
 
