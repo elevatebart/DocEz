@@ -33,7 +33,7 @@
     "reveal.js": "^3.9.2",
     "sass-loader": "^8.0.2",
     "vue-cli-plugin-storybook": "^1.2.0",
-    "vue-cli-plugin-styleguidist": "^4.8.0",
+    "vue-cli-plugin-styleguidist": "^4.11.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
