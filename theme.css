@@ -136,11 +136,18 @@ pre[data-line] {
   visibility: visible;
   position: absolute;
   right: 0;
+  bottom: 0;
   transition-duration: 500ms;
+  display: flex;
+  height: 22vh;
+  align-items: center;
 }
 
 #splash .fragment.avatar-splash.visible {
-  transform: translate3d(-10vw, -20vh, 0) scale3d(1.4, 1.4, 1);
+  right: 25%;
+  bottom: 50%;
+  margin-bottom: -15vh;
+  transform: scale3d(1.5, 1.5, 1);
 }
 
 #splash .presentation {
