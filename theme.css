@@ -344,16 +344,22 @@ h2.fragment.recap {
   right: 5%;
 }
 
-#sb-docs div,
-#vsg-cli div {
+#sb-docs div {
   width: 60vw;
   height: 400px;
+}
+
+#sb-docs div,
+#vsg-cli div {
   margin: 50px auto;
   display: flex;
   align-items: center;
 }
 
-#sb-docs div .pipe-glyph,
+#vsg-cli > div {
+  margin-left: -30px;
+}
+
 #vsg-cli div .pipe-glyph {
   height: 50px;
   margin: 30px;
@@ -372,12 +378,15 @@ h2.fragment.recap {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 400px;
-  margin-left: -200px;
+  margin-left: -260px;
 }
 
 #vsg-cli .fragment.slide-in-down.visible {
   top: 84px;
+}
+
+#vsg-cli .chain-logo {
+  height: 220px;
 }
 
 #vsg-cli .who-it-is-for {
