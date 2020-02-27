@@ -26,15 +26,19 @@
       <div class="slides">
         <section id="splash">
           <aside class="notes">
-            Hello everyone, and welcome to "component documentation made easy".
-            My name is Bart Ledoux and I'm a Design Tech Lead in Chicago.
-            [click] A bit about me: - I help organize the Chicago VueJs meetup,
-            we are laways looking for new talks. - I am pretty active on Vue
-            Land, the VueJs official Discord server. - I help maintain the VueJs
-            side of Storybook, one of the reasons I am here today - I actively
-            maintain a library called Vue-Styleguidist. If you do not know about
-            it yet, just wait a few minutes, I am getting to that. Overall, it's
-            a design system documetation tool. [click]
+            Hello everyone, and welcome to "component documentation made
+            easy".<br />
+            My name is Bart and I'm a Design Tech Lead in Chicago.<br />
+            [click] <br />
+
+            A bit about me: <br />
+            - I help organize the Chicago VueJs meetup<br />
+            - I am pretty active on Vue Land, the VueJs official Discord server
+            <br />
+            - I help maintain the Vue side of Storybook<br />
+            - I actively maintain a library called Vue-Styleguidist.<br />
+            Enough about about me! I would like to know a little about you.
+            <br />[click] <br />
           </aside>
           <div
             class="sl-block"
@@ -83,25 +87,30 @@
           </div>
         </section>
         <section id="characters">
-          <!-- prettier-ignore -->
           <aside class="notes">
-            But enough about me, I want to learn a little more about you [click]
-            By show of hands, how many of you here are designing or specifying
-            Design Systems? 
-            [click] 
-            By show of hands again, how many of you here
-            are developping, actually writing the code for a Design System?
-            [click] 
-            And how many of you are writing code that uses components of
-            an existing Design System or a component library like vuetify? 
-            This talk is for you and for all of us who want to better
-            communicate. 
-            To help me tell you a little bit about how to go about it, here are 
-            three characters that are building an amazing product.
-            [click] 
-            Dominic, Sarah and phil are going to work together ad
-            build a story from idea to product. [click] Here is a visual aid to
-            remember who is who?
+            Raise your hand if you are a designer <br />
+            [click] <br />
+            By show of hands again, who is writing the the code for a Design
+            System or a component library?<br />
+            [click] <br />
+            And who uses components of a component library in their code.
+            <br />
+            vuetify or bootstrap-vue count as well.
+            <br />
+            [click] <br />
+            Dominic, Sarah and Phil are going to personify each of those three
+            roles. If your persona is on the screen it means that this is
+            specially interresting to you<br />
+            [click]<br />
+            Here is a visual aid to remember who is who?<br />
+            <br />
+            So, you might be asking, why is documentation so important that
+            someone would write a talk about it. Well, not all talks are about
+            saving the world. <br />
+            Just kidding. Documentation is important because no one wants to be
+            handed off a "blurrg".
+            <br />
+            [click]
           </aside>
           <div class="dominic">
             <img
@@ -156,25 +165,31 @@
           </div>
         </section>
         <section id="blurrg">
-          <!-- prettier-ignore -->
           <aside class="notes">
-            So, you might be asking, why is documentation so important that someone would write a talk about it.
-            Well, basically, it all sums down to this: no one wants to be handed off a "blurrg".
-            [click]
-            Here, in the first episode of the Mandalorian, Mando gets one vehicle to go through the Badlands: A beast named a blurrg.
-            This wild mount throws him almost instantly off his back. Touching scene that show Mando as vulnerable, 
-            great show if you have not seen it yet... 
-            Back to components: nobody wants to have to tame the components before use.
-            What interrests me more in this scene is what Mando says just afterwards:
-            [click]
-            Uh! I don't have time for this! Don't you have a land speeder or a speeder bike I can hire?
-            We all are in the same situation when consuming components. We want the speeder bike, not the blurrg...
-            Well, I know how cute they are...
-            In this case, it often takes more time to write the documentation than to tame the components.
-            [click]
-            Sarah still wants to do her job right. She still needs to document the components. 
-            What do we do when we have a repetitive task?
-            What are our computers best feature? What can they do well that we usually can't?
+            [click]<br />
+            Here, in the first episode of the Mandalorian, Mando gets one
+            vehicle to go through the Badlands:<br />
+            A beast named a blurrg.<br />
+            This wild animal throws him almost instantly off his back. Touching
+            scene that show Mando as vulnerable. great show if you have not seen
+            it yet... <br />
+            Nobody wants to have to tame the components before they can use
+            them. What interrests me more in this scene is what Mando says just
+            afterwards:<br />
+            [click]<br />
+            Uh! I don't have time for this! Don't you have a land speeder or a
+            speeder bike I can hire? We all are in the same situation when
+            consuming components. We want the speeder bike, not the blurrg... I
+            know how they are cute... But we do not have the proper helmet when
+            we code.<br />
+            [click]<br />
+            In this case, it often takes more time to write the documentation
+            than to tame the components.<br />
+            Sarah still wants to do her job right. She still needs to document
+            the components. And she is a smart Engineer.<br />
+            What do we do when we have a repetitive task?<br />
+            What are our computers best feature?<br />
+            What can computers do well that we usually can't?<br />
           </aside>
           <img
             class="fragment sarah-blurrg"
@@ -196,15 +211,19 @@
           </p>
         </section>
         <section id="sarah-dominic">
-          <!-- prettier-ignore -->
           <aside class="notes">
-            Automation!
-            [click]
-            The first interaction we are going to look at is between Sarah and dominic
-            [click]
-            Dominic has asked Sarah to enhance the existing DatePicker. 
-            When the selected date is too far in the future it is hard to go back to today.
-            If a user
+            Automation! And more specifically automating example automation.<br />
+            Examples are very often what we look for in a documentation.<br />
+            [click]<br />
+            Our first documentation issue is a problem that Sarah and Dominic
+            have<br />
+            [click]<br />
+            Dominic has asked Sarah to enhance the existing Button. He asked her
+            to add new available colors for it.<br />
+            He sends her a Sketch file and expects a component to check.<br />
+            [click]<br />
+            Does he have to wait until the component is implemented to check
+            what it is going to look like?
           </aside>
           <div
             class="fragment designer-exchange"
@@ -278,17 +297,11 @@
         </section>
         <section>
           <section id="sb">
-            <!-- prettier-ignore -->
             <aside class="notes">
-              Introducing your first documentation tool: Storybook.
-              Who here has never used storybook? Never heard of it?
-              [click]
-              You can think of storybook as your TDD for visual components.
-              It allows us to build units and test in isolation from the rest of the app.
-              This way we can make sure that at least the component looks like what we want to.
-      
-              Let me show you how it works.
-              [Demo]
+              Introducing your first documentation tool: Storybook.<br />
+              Who here has never used storybook? Never heard of it?<br />
+              It's a tool to showcase components in isolation.<br />
+              [click]<br />
             </aside>
             <h2>Storybook</h2>
             <img
@@ -298,10 +311,25 @@
             <code>vue add storybook</code>
           </section>
           <section id="sb-screenshot">
+            <aside class="notes">
+              Barebones what you get when running vue add storybook<br />
+              Left: The list of all examples written by Sarah for the Button<br />
+              Center: An isolated iframe with the rendered selected example<br />
+              Bottom: A Knob to change the content of the button<br />
+              Now how did Sarah write those examples in isolation?<br />
+            </aside>
             <img src="img/sb-screen.png" />
             <img src="img/2x/dominic.png" class="who-it-is-for" />
           </section>
           <section id="sb-code">
+            <aside class="notes">
+              She wrote a stories file.<br />
+              Import your component<br />
+              Export some meta in default<br />
+              Export a story, a use case for your component<br />
+              (no knobs?) <br />
+              [demo]
+            </aside>
             <h2 style="margin:30px 0;">
               Button.stories.js
               <img src="img/storybook.png" />
@@ -321,9 +349,8 @@
             <img src="img/2x/sarah.png" class="who-it-is-for" />
           </section>
           <section id="sb-procontra">
-            <!-- prettier-ignore -->
             <aside class="notes">
-              Let's review the ups and downs of storybook
+              Super fast, let's review the ups and downs.
             </aside>
             <h2>
               Storybook
@@ -339,17 +366,16 @@
                   <li>Very Popular</li>
                   <li>Slick Design</li>
                   <li>Knobs & Actions</li>
-                  <li>JSX</li>
                   <li>Backed by Chromatic QA</li>
                 </ul>
                 <img src="img/ChromaticQALogo.png" />
               </div>
-              <div class="fragment contra" data-fragment-index="2">
+              <div class="fragment contra" data-fragment-index="1">
                 <h3>Not so cool</h3>
                 <ul>
                   <li>JSX is not HTML</li>
-                  <li>Theming using ReactJs</li>
-                  <li>No Vue Dev Tools</li>
+                  <li>ReactJs</li>
+                  <li>Vue Dev Tools needs detach</li>
                   <img src="img/React.png" />
                 </ul>
               </div>
@@ -358,6 +384,11 @@
           </section>
         </section>
         <section id="sarah-phil">
+          <aside class="notes">
+            Dominic is satisfied with what Sarah showed.<br />
+            Now Phil look at storybook as the documented new Datepicker.<br />
+            he is missing a couple of points here. 
+          </aside>
           <span>🛠</span>
           <img src="img/2x/sarah.png" class="char-large" />
           <svg
@@ -534,6 +565,7 @@
     </div>
 
     <script src="./node_modules/reveal.js/js/reveal.js"></script>
+    <script src="./node_modules/reveal.js/plugin/notes/notes.js"></script>
     <script src="./node_modules/prismjs/prism.js"></script>
     <script src="./node_modules/prismjs/components/prism-jsx.min.js"></script>
     <script src="./node_modules/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
