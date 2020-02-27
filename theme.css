@@ -246,7 +246,54 @@ pre[data-line] {
   right: 10%;
 }
 
+.screenshot-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.screenshot-wrapper > div > div > div {
+  border: 10px solid rgb(33, 165, 88);
+  position: absolute;
+  min-height: 50px;
+  min-width: 50px;
+  transition: 0.5s all;
+}
+
+#sb-screen .screenshot-wrapper > div > div.fragment,
+#vsg-screen .screenshot-wrapper > div > div.fragment {
+  opacity: 1;
+  visibility: visible;
+}
+
+#sb-screen .screenshot-wrapper > div > div > div.fragment,
+#vsg-screen .screenshot-wrapper > div > div > div.fragment {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* pro-contra */
+
+#sb-screen .screenshot-wrapper > div > div > div.fragment {
+  left: 1.5%;
+  top: 12%;
+  width: 23%;
+  height: 50%;
+}
+
+#sb-screen .screenshot-wrapper > div > div.fragment.visible > div {
+  top: 9%;
+  left: 25%;
+  width: 70%;
+  height: 48%;
+}
+
+#sb-screen .screenshot-wrapper > div > div > div.fragment.visible {
+  top: 58%;
+  left: 24%;
+  width: 72%;
+  height: 10%;
+}
+
 #sb-procontra .who-it-is-for {
   left: 50%;
   margin-left: -50px;
@@ -302,6 +349,27 @@ h2.fragment.recap {
 }
 
 /* vsg */
+
+#vsg-screen .screenshot-wrapper > div > div > div.fragment {
+  left: 1.5%;
+  top: 1%;
+  width: 17%;
+  height: 50%;
+}
+
+#vsg-screen .screenshot-wrapper > div > div.fragment.visible > div {
+  top: 12%;
+  left: 17%;
+  width: 80%;
+  height: 50%;
+}
+
+#vsg-screen .screenshot-wrapper > div > div > div.fragment.visible {
+  top: 60%;
+  left: 19%;
+  width: 78%;
+  height: 35%;
+}
 
 #vsg-code .who-it-is-for {
   left: auto;
