@@ -7,8 +7,8 @@
 
 <script>
 const COLOR_MAP = {
+  // green: "is-success",
   blue: "is-primary",
-  green: "is-success",
   red: "is-danger"
 };
 
