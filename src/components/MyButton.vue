@@ -17,7 +17,7 @@ export default {
   props: {
     /**
      * Set the background color of the button
-     * @values red, blue, green
+     * @values red, blue
      */
     color: {
       type: String,
