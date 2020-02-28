@@ -26,5 +26,8 @@ export default {
   },
   fontSize: {
     h4: "18px"
+  },
+  mq: {
+    small: "@media (max-width: 800px)"
   }
 };
