@@ -241,6 +241,36 @@ pre[data-line] {
   width: 92px;
 }
 
+#toc {
+  position: relative;
+  height: 80vh;
+  display: flex !important;
+  align-items: center;
+  min-width: 80vh;
+  justify-content: center;
+}
+
+#toc h2 {
+  position: absolute;
+  top: 5vh;
+}
+
+#toc li {
+  font-size: xx-large;
+  margin-bottom: 5vh;
+}
+
+#toc ul li {
+  margin-top: 3vh;
+  list-style-type: none;
+}
+
+#toc li img {
+  height: 70px;
+  margin: 0 30px;
+  vertical-align: middle;
+}
+
 #sb-code .who-it-is-for {
   left: auto;
   right: 10%;
@@ -292,6 +322,15 @@ pre[data-line] {
   left: 24%;
   width: 72%;
   height: 10%;
+}
+
+#sb-procontra .logos {
+  position: absolute;
+  left: 0;
+  top: 10vh;
+  background: black;
+  text-align: center;
+  height: 90vh;
 }
 
 #sb-procontra .who-it-is-for {
