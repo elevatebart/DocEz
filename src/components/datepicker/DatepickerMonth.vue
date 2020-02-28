@@ -44,6 +44,9 @@
 </template>
 
 <script>
+/**
+ * @example [none]
+ */
 export default {
   name: "BDatepickerMonth",
   props: {

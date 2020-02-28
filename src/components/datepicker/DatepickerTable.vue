@@ -1,9 +1,15 @@
 <template>
   <section class="datepicker-table">
     <header class="datepicker-header">
-      <div v-for="(day, index) in visibleDayNames" :key="index" class="datepicker-cell">{{ day }}</div>
+      <div
+        v-for="(day, index) in visibleDayNames"
+        :key="index"
+        class="datepicker-cell"
+      >
+        {{ day }}
+      </div>
     </header>
-    <div class="datepicker-body" :class="{'has-events':hasEvents}">
+    <div class="datepicker-body" :class="{ 'has-events': hasEvents }">
       <b-datepicker-table-row
         v-for="(week, index) in weeksInThisMonth"
         :key="index"
@@ -39,6 +45,9 @@ import DatepickerTableRow from "./DatepickerTableRow";
 
 const isDefined = d => d !== undefined;
 
+/**
+ * @example [none]
+ */
 export default {
   name: "BDatepickerTable",
   components: {

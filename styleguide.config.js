@@ -1,15 +1,17 @@
+const path = require("path");
+// reference: https://vue-styleguidist.github.io/Configuration.html
+
 module.exports = {
-  // set your styleguidist configuration here
   title: "Default Style Guide",
-  styles: "./sg-conf/styles.js",
-  theme: "./sg-conf/theme.js",
-  components: [
-    "./src/components/**/MyButton.vue",
-    "./src/components/**/[A-Z]*.vue"
-  ],
+  // initially, you can change the looks globally using the theme property.
+  // Note: the file is given as String to keep it available for Hot Module Replacement (HMR)
+  // https://github.com/styleguidist/react-styleguidist/blob/master/src/client/styles/theme.ts
+  theme: "./config/styleguidist/theme.js",
+  // Fine tune the styles of each component, component per component
+  styles: "./config/styleguidist/styles.js",
+  components: ["./src/components/[A-Z]*.vue", "./src/components/*/[A-Z]*.vue"],
   ignore: [
-    "**/Datepicker[A-Z]*.vue",
-    "**/Dropdown[A-Z]*.vue",
+    // ignore HelloWorld as it is not a real component we want to document
     "**/HelloWorld.vue"
   ],
   defaultExample: true,
@@ -22,5 +24,10 @@ module.exports = {
   require: ["./src/scss/buefy-build.scss"],
   // skipComponentsWithoutExample: true,
   // usageMode: "expand",
-  exampleMode: "expand"
+  exampleMode: "expand",
+  getComponentPathLine(componentPath) {
+    const name = path.basename(componentPath, ".vue");
+    const dir = path.dirname(componentPath).replace(/^src/, "");
+    return `import ${name} from '@my-library${dir}';`;
+  }
 };

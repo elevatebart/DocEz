@@ -1,7 +1,3 @@
-<docs>
-Part of a dropdown menu
-</docs>
-
 <template>
   <hr v-if="separator" class="dropdown-divider" />
   <a
@@ -26,6 +22,9 @@ Part of a dropdown menu
 </template>
 
 <script>
+/**
+ * @example [none]
+ */
 export default {
   name: "BDropdownItem",
   props: {
