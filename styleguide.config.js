@@ -9,18 +9,27 @@ module.exports = {
   theme: "./config/styleguidist/theme.js",
   // Fine tune the styles of each component, component per component
   styles: "./config/styleguidist/styles.js",
-  components: ["./src/components/[A-Z]*.vue", "./src/components/*/[A-Z]*.vue"],
   ignore: [
     // ignore HelloWorld as it is not a real component we want to document
     "**/HelloWorld.vue"
   ],
   defaultExample: true,
-  // sections: [
-  //   {
-  //     name: 'First Section',
-  //     components: 'src/components/**/[A-Z]*.vue'
-  //   }
-  // ],
+  // enable routing and section paging
+  pagePerSection: true,
+  // define the sections
+  sections: [
+    {
+      name: "Getting Started",
+      content: "./config/styleguidist/GettingStarted.md"
+    },
+    {
+      name: "Components",
+      components: [
+        "./src/components/[A-Z]*.vue",
+        "./src/components/*/[A-Z]*.vue"
+      ]
+    }
+  ],
   require: ["./src/scss/buefy-build.scss"],
   // skipComponentsWithoutExample: true,
   // usageMode: "expand",
