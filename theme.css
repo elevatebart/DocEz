@@ -489,11 +489,15 @@ h2.fragment.recap {
 }
 
 #vsg-cli .fragment.slide-in-down.visible {
-  top: 84px;
+  top: 0;
 }
 
 #vsg-cli .chain-logo {
   height: 220px;
+}
+
+#vsg-cli .container-cli {
+  transform: scale(0.7);
 }
 
 #vsg-cli .who-it-is-for {
