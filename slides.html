@@ -6,18 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Component Documentation made Easy</title>
     <meta name="description" content="Slides" />
-    <link rel="stylesheet" href="./node_modules/reveal.js/css/reveal.css" />
+    <link rel="stylesheet" href="./reveal.js/css/reveal.css" />
+    <link rel="stylesheet" href="./reveal.js/css/theme/black.css" />
+    <link rel="stylesheet" href="./prismjs/themes/prism-okaidia.css" />
     <link
       rel="stylesheet"
-      href="./node_modules/reveal.js/css/theme/black.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./node_modules/prismjs/themes/prism-okaidia.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./node_modules/prismjs/plugins/line-highlight/prism-line-highlight.css"
+      href="./prismjs/plugins/line-highlight/prism-line-highlight.css"
     />
     <link rel="stylesheet" href="./theme.css" />
   </head>
@@ -601,13 +595,13 @@
       </div>
     </div>
 
-    <script src="./node_modules/reveal.js/js/reveal.js"></script>
-    <script src="./node_modules/reveal.js/plugin/notes/notes.js"></script>
-    <script src="./node_modules/prismjs/prism.js"></script>
-    <script src="./node_modules/prismjs/components/prism-jsx.min.js"></script>
-    <script src="./node_modules/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
-    <script src="./node_modules/prismjs/plugins/line-highlight/prism-line-highlight.min.js"></script>
-    <script src="./node_modules/prismjs/plugins/keep-markup/prism-keep-markup.min.js"></script>
+    <script src="./reveal.js/js/reveal.js"></script>
+    <script src="./reveal.js/plugin/notes/notes.js"></script>
+    <script src="./prismjs/prism.js"></script>
+    <script src="./prismjs/components/prism-jsx.min.js"></script>
+    <script src="./prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+    <script src="./prismjs/plugins/line-highlight/prism-line-highlight.min.js"></script>
+    <script src="./prismjs/plugins/keep-markup/prism-keep-markup.min.js"></script>
     <script>
       Prism.plugins.NormalizeWhitespace.setDefaults({
         // "break-lines": 80,
@@ -635,8 +629,8 @@
       link.rel = "stylesheet";
       link.type = "text/css";
       link.href = window.location.search.match(/print-pdf/gi)
-        ? "./node_modules/reveal.js/css/print/pdf.css"
-        : "./node_modules/reveal.js/css/print/paper.css";
+        ? "./reveal.js/css/print/pdf.css"
+        : "./reveal.js/css/print/paper.css";
       document.getElementsByTagName("head")[0].appendChild(link);
     </script>
   </body>

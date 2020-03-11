@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "core-js": "^3.6.4",
-    "prismjs": "^1.19.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -30,7 +29,6 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.1.2",
     "node-sass": "^4.13.1",
-    "reveal.js": "^3.9.2",
     "sass-loader": "^8.0.2",
     "vue-cli-plugin-storybook": "^1.2.1",
     "vue-cli-plugin-styleguidist": "^4.13.0",
