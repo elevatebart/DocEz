@@ -1,6 +1,6 @@
 # DocEz
 
-Slides and demo material for Component Documentation made Easy
+Slides and demo material for Component Documentation made Easy [live link](https://elevatebart.github.io/DocEz/slides.html)
 
 ## Contact me
 
